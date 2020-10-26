@@ -1,11 +1,12 @@
 package com.cartesify.solideureka
 
 import android.content.Context
+import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith
+import kotlin.jvm.Throws
 
 /**
  * Instrumentation test, which will execute on an Android device.
@@ -18,7 +19,7 @@ class ExampleInstrumentedTest {
     @Throws(Exception::class)
     fun useAppContext() {
         // Context of the app under test.
-        val appContext: Context = InstrumentationRegistry.getTargetContext()
+        val appContext: Context = ApplicationProvider.getApplicationContext()
         Assert.assertEquals("com.cartesify.solideureka", appContext.packageName)
     }
 }

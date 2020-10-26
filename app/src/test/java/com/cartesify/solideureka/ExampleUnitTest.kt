@@ -2,6 +2,7 @@ package com.cartesify.solideureka
 
 import org.junit.Assert
 import org.junit.Test
+import kotlin.jvm.Throws
 
 /**
  * Example local unit test, which will execute on the development machine (host).
